@@ -4,6 +4,7 @@
 const dayjs = require('dayjs');
 const readline = require('readline');
 
+// create node readline interface to handle input stream
 const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout,
@@ -12,14 +13,18 @@ const rl = readline.createInterface({
 
 // regex to test if the time is in the valid format
 const timeRegex = /^([0-1]?[0-9]|2[0-3]):[0-5][0-9]$/;
+
+// get input time
 const inputTimeString = process.argv[2] || null;
 
+// create dayjs object from input time - HH:mm
 function parseTimeString(timeString) {
   return dayjs()
     .set('h', timeString.split(':')[0])
     .set('m', timeString.split(':')[1]);
 }
 
+// create dayjs object from crontab time - * 10
 function parseCronTime(hour, minute, referenzTime) {
   let time = dayjs();
 
@@ -56,6 +61,7 @@ function main() {
     const lineParams = line.split(' ');
 
     if (!isValidCronLine(lineParams)) {
+      // output empty line if crontab is invalid
       console.log();
     } else {
       const time = parseCronTime(lineParams[1], lineParams[0], referenceTime);
@@ -66,10 +72,10 @@ function main() {
         lineParams[2]
       );
     }
-
   });
 
   return true;
 }
 
+// entry point
 main();
