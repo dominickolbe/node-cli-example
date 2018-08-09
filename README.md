@@ -2,6 +2,8 @@
 
 > node.js example of parsing crontab
 
+[![Build Status](https://travis-ci.org/dominickolbe/crontab-info.svg?branch=master)](https://travis-ci.org/dominickolbe/crontab-info)
+
 ## Install
 
 Install npm dependencies
