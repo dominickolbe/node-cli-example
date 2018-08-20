@@ -1,8 +1,8 @@
 {
-  "name": "crontab-info",
+  "name": "node-cli-example",
   "version": "1.0.0",
   "author": "Dominic Kolbe <hi@dominickolbe.dk>",
-  "repository": "git@github.com:dominickolbe/crontab-info.git",
+  "repository": "git@github.com:dominickolbe/node-cli-example.git",
   "description": "output crontab jobs",
   "private": true,
   "main": "index.js",
