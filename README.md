@@ -1,10 +1,10 @@
-# crontab-info
+# node-cli-example
 
 **This is an example project using a javascript command line interface (CLI) with node.js. I just wanted to figure out, how to work with cli parameters and input streams and here is the result...**
 
 > node.js cli example of parsing crontab
 
-[![Build Status](https://travis-ci.org/dominickolbe/crontab-info.svg?branch=master)](https://travis-ci.org/dominickolbe/crontab-info)
+[![Build Status](https://travis-ci.org/dominickolbe/node-cli-example.svg?branch=master)](https://travis-ci.org/dominickolbe/node-cli-example)
 
 ## Install
 
